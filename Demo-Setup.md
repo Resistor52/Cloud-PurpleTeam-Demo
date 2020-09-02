@@ -72,9 +72,3 @@ Activate the following plugins:
 11.) Modify the "wordpress" security group by allowing HTTP (port 80) in from the sg-id that corresponds to the "wordpress-alb" security group.
 
 12.) Make an IAM user named "Joe" and grant the "AmazonEC2FullAccess" permission.
-
----------------
-
-13.) Allow a few days to pass and then log in as user "Joe" and open up all rules to allow access from anywhere. as shown below:
-
-<img src="./media/wide-open-security-group.png" />
