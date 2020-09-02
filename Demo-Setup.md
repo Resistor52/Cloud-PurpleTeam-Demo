@@ -1,17 +1,16 @@
 # Demo
 
-## Account Setup
-Create a brand new account called "khartman-demo1"
+## Target Account Setup
 
-* Enable Guard Duty
-* Make a Cloudwatch logs Group for Flow Logs, named "khartman-demo1-flowlogs"
-* Enable Flow Logs (both Accept & Reject)
-* Enable CloudTrail to s3 bucket (aws-cloudtrail-logs-675556673290-management-events-cbeb188d)
-    and CloudWatch Logs (aws-cloudtrail-logs-675556673290-30363060). Also enable CloudTrail Insights.
-* Make a bucket for config (khartman-demo1-config)
-* Enable Config Enable. (Bucket is config-bucket-675556673290)
-  * No Rules to start
-* Enable Security Hub
+1. Create a brand new account called "khartman-demo1"
+2. Enable Guard Duty
+3. Make a Cloudwatch logs Group for Flow Logs, named "khartman-demo1-flowlogs"
+4. Enable Flow Logs (both Accept & Reject)
+5. Enable CloudTrail to s3 bucket (aws-cloudtrail-logs-675556673290-management-events-cbeb188d) and CloudWatch Logs (aws-cloudtrail-logs-675556673290-30363060). Also enable CloudTrail Insights.
+6. Make a bucket for config (khartman-demo1-config)
+7. Enable Config Enable. (Bucket is config-bucket-675556673290). No Rules to start
+8. Enable Security Hub
+9. Make an IAM user named "Joe" and grant the "AmazonEC2FullAccess" permission.
 
 ## Make an Intentionally Vulnerable WordPress EC2 Instance
 
@@ -71,4 +70,6 @@ Activate the following plugins:
 
 11.) Modify the "wordpress" security group by allowing HTTP (port 80) in from the sg-id that corresponds to the "wordpress-alb" security group.
 
-12.) Make an IAM user named "Joe" and grant the "AmazonEC2FullAccess" permission.
+## Weaken the Security of the Cloud Environment
+
+1.) Allow a few days to pass and then log in as user "Joe" and open up all rules to allow access from the Kali Linux External IP Address. Make the SSH Rule Accessible from Everywhere.
