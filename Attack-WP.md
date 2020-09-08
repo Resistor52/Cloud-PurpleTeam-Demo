@@ -23,7 +23,7 @@ Set the WPscan API token. You can get a free API token with 50 daily requests by
 
 ```
 bash
-export $TOKEN=     #Set this variable to your API token
+export TOKEN=     #Set this variable to your API token
 exit
 ```
 
