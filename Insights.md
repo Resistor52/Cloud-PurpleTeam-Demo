@@ -157,7 +157,17 @@ LIMIT 100
 ```
 
 ```
-SELECT client_ip, request_verb, request_url, user_agent, target_status_code_list
+SELECT time,
+     client_ip,
+     elb_status_code,
+     target_status_code,
+     request_verb,
+     request_url,
+     user_agent
 FROM alb_logs
-LIMIT 100
+ORDER BY  time
+```
+
+```
+
 ```
