@@ -70,7 +70,7 @@ whoami
 uname -a
 :audit_etcpasswd
 cd /var/www/html
-:file_download wordpress-4.4.tar.gz file
+:file_download wordpress-4.4.tar.gz /tmp/wordpress-4.4.tar.gz
 cd /var/www/html/wordpress/wp-content/plugins
 :net_scan 172.31.44.1-172.31.44.10 255.255.255.0 1-666
 ```
