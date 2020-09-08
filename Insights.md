@@ -145,3 +145,19 @@ fields @timestamp, @message
 fields @timestamp, @message
 | filter srcAddr like '172.31.42.53' and dstPort = '666'
 ```
+
+### Load Balancer Logs  
+
+Athena
+
+```
+SELECT *
+FROM alb_logs
+LIMIT 100
+```
+
+```
+SELECT client_ip, request_verb, request_url, user_agent, target_status_code_list
+FROM alb_logs
+LIMIT 100
+```
