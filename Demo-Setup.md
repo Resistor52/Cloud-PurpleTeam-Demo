@@ -8,7 +8,7 @@
 4. Enable Flow Logs (both Accept & Reject)
 5. Enable CloudTrail to s3 bucket (aws-cloudtrail-logs-675556673290-management-events-cbeb188d) and CloudWatch Logs (aws-cloudtrail-logs-675556673290-30363060). Also enable CloudTrail Insights.
 6. Make a bucket for config (khartman-demo1-config)
-7. Enable Config Enable. (Bucket is config-bucket-675556673290). No Rules to start
+7. Enable Config. (Bucket is config-bucket-675556673290). No Rules to start
 8. Enable Security Hub
 9. Make an IAM user named "Joe" and grant the "AmazonEC2FullAccess" permission.
 
